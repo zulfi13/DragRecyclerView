@@ -76,11 +76,11 @@ Download
 ```groovy
 dependencies {
 
-    compile 'com.wonshinhyo:dragrecyclerview:0.1.1'
+    compile 'com.wonshinhyo:dragrecyclerview:+'
     
     or 
     
-    compile 'com.wonshinhyo:dragrecyclerview.realm:0.1.1' // use realm
+    compile 'com.wonshinhyo:dragrecyclerview.realm:+' // use realm
      
 }
 ```
@@ -94,7 +94,7 @@ Inspired by [ItemTouchHelper](https://github.com/iPaulPro/Android-ItemTouchHelpe
 License
 =======
 
-    Copyright 2016 Shinhyo Won
+    Copyright 2017 Shinhyo Won
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
