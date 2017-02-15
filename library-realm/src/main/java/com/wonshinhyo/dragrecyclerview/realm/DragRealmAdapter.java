@@ -15,7 +15,7 @@ import io.realm.OrderedRealmCollection;
 import io.realm.RealmRecyclerViewAdapter;
 
 /**
- * Created by Shinhyo on 2016. 6. 10..
+ * Created by Shinhyo
  */
 
 public abstract class DragRealmAdapter extends RealmRecyclerViewAdapter implements ImpAdapter, OnDragListener {

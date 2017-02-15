@@ -8,7 +8,7 @@ import android.view.View;
 import java.util.List;
 
 /**
- * Created by Shinhyo on 2016. 6. 14..
+ * Created by Shinhyo
  */
 public abstract class DragAdapter extends android.support.v7.widget.RecyclerView.Adapter implements ImpAdapter, OnDragListener {
 

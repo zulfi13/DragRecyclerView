@@ -7,7 +7,7 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.AttributeSet;
 
 /**
- * Created by Shinhyo on 2016. 6. 10..
+ * Created by Shinhyo
  */
 
 public class DragRecyclerView extends android.support.v7.widget.RecyclerView implements ImpRecycleView {
@@ -29,6 +29,7 @@ public class DragRecyclerView extends android.support.v7.widget.RecyclerView imp
     private void setAttrs(Context context, @Nullable AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Drag);
         mHandleId = a.getResourceId(R.styleable.Drag_handle_id, -1);
+        a.recycle();
     }
 
     ImpAdapter getDragAdapter() {
