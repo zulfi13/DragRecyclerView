@@ -77,10 +77,17 @@ Download
 dependencies {
 
     compile 'com.wonshinhyo:dragrecyclerview:+'
-    
-    or 
-    
-    compile 'com.wonshinhyo:dragrecyclerview.realm:+' // use realm
+     
+}
+```
+
+Realm
+=======
+
+```groovy
+dependencies {
+
+    compile 'com.wonshinhyo:dragrecyclerview.realm:+'
      
 }
 ```
