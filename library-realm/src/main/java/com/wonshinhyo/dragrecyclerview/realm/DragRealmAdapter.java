@@ -20,13 +20,15 @@ import io.realm.RealmRecyclerViewAdapter;
 
 public abstract class DragRealmAdapter extends RealmRecyclerViewAdapter implements ImpAdapter, OnDragListener {
 
+    public final Context context;
     private boolean isHandleDragEnabled = true;
     private OnDragListener mDragListener;
     private DragRecyclerView mRecyclerView;
 
 
     public DragRealmAdapter(Context context, OrderedRealmCollection data, boolean autoUpdate) {
-        super(context, data, autoUpdate);
+        super(data, autoUpdate);
+        this.context = context;
     }
 
     @Override

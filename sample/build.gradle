@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.wonshinhyo.dragrecyclerview.sample"
-        minSdkVersion 14
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -24,10 +24,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    //    compile project(':library-realm')
-//    compile 'com.wonshinhyo:dragrecyclerview.realm:0.1.1'
-    compile project(':library')
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support:recyclerview-v7:25.1.1'
+//    compile project(':library')
+    compile 'com.wonshinhyo:dragrecyclerview:1.0.4'
+
+    compile 'com.android.support:appcompat-v7:' + rootProject.ext.supportVersion
+    compile 'com.android.support:recyclerview-v7:' + rootProject.ext.supportVersion
     compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
 }
